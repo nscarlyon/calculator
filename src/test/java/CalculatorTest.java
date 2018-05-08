@@ -15,4 +15,10 @@ public class CalculatorTest {
         assertThat(calculator.Add(1,2), is(3));
     }
 
+    @Test
+    public void FailingTest() {
+        Calculator calculator = new Calculator();
+        assertThat(calculator.Add(1,2), is(10));
+    }
+
 }
