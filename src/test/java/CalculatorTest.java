@@ -8,4 +8,11 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         assertThat(calculator.Add(1,1), is(2));
     }
+
+    @Test
+    public void OnePlusTwo() {
+        Calculator calculator = new Calculator();
+        assertThat(calculator.Add(1,2), is(3));
+    }
+
 }
